@@ -68,18 +68,24 @@ module.exports = function (grunt) {
       }
     },
     watch: {
-      gruntfile: {
-        files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint:gruntfile']
-      },
-      src: {
-        files: '<%= jshint.src.src %>',
-        tasks: ['jshint:src', 'qunit']
-      },
-      test: {
-        files: '<%= jshint.test.src %>',
-        tasks: ['jshint:test', 'qunit']
-      }
+//      gruntfile: {
+//        files: '<%= jshint.gruntfile.src %>',
+//        tasks: ['jshint:gruntfile']
+//      },
+//      src: {
+//        files: '<%= jshint.src.src %>',
+//        tasks: ['jshint:src', 'qunit']
+//      },
+//      test: {
+//        files: '<%= jshint.test.src %>',
+//        tasks: ['jshint:test', 'qunit']
+//      },
+        dev:{
+            files:["./src/*.html", "./src/js/*.html", "./src/css/*.html"],
+            options:{
+                livereload:true
+            }
+        }
     },
     connect: {
       server: {
