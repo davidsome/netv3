@@ -1,0 +1,28 @@
+{
+  "name": "netv3",
+  "title": "netrangerv3",
+  "description": "netrangerv3 frontend",
+  "version": "3.0.0",
+  "homepage": "",
+  "author": {
+    "name": "maow",
+    "url": "https://github.com/maoyw"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "~1.10.0"
+  },
+  "keywords": [
+    "jquery-plugin"
+  ]
+}
