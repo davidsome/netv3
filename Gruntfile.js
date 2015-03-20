@@ -67,6 +67,13 @@ module.exports = function (grunt) {
         src: ['test/**/*.js']
       }
     },
+      copy:{
+          js: {
+              files:[
+                  {expand:true, cwd: 'bower_components/', src:"**/*", dest:"src/"}
+              ]
+        },
+      },
     watch: {
 //      gruntfile: {
 //        files: '<%= jshint.gruntfile.src %>',
